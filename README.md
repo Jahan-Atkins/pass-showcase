@@ -41,7 +41,7 @@ P.A.S.S. is a sequencing optimizer: it decides the order in which trucks are ser
 
 ## My role
 
-Co-founder working with Lamour Atkins and Quinton Jones. I built the MVP software: the core engine, simulator, and backend.
+Co-founder working with Lamour Atkins . I built the MVP software: the core engine, simulator, and backend.
 
 ## What I learned
 
