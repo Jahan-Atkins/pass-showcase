@@ -2,7 +2,7 @@
 
 An early-stage logistics prototype that explores how to reduce the time drayage drivers spend picking up containers at marine terminals in Los Angeles and Long Beach.
 
-> This is a showcase repo. A walkthrough is available on request. Source code, detailed simulation results, and demo materials are private.
+> This is a showcase repo. A walkthrough is available on request. Source code, detailed simulation results, and the full demo are private.
 
 **Contact:** jahan.atkins815@gmail.com | [linkedin.com/in/jahan-atkins-39002b419](https://linkedin.com/in/jahan-atkins-39002b419)
 
@@ -20,6 +20,18 @@ P.A.S.S. started with sequencing trucks to reduce crane work. The prototype also
 - **Simulator and benchmark harness:** a discrete-event simulator that tests each strategy across many randomized runs, including control scenarios where a real improvement should not appear
 - **Backend:** a FastAPI scaffold and adapters for external data sources
 - **Mobile prototype:** an Expo (React Native) driver demo
+
+## Prototype screenshots
+
+The terminal operations board uses fictional demo data and a schematic staging lot.
+
+**Terminal overview**
+
+![Terminal operations board showing a staging-lot schematic, queue summary, and truck list](screenshots/terminal-operations.png)
+
+**Truck detail**
+
+![Truck detail showing its assigned gate, container, yard position, and time in the queue](screenshots/truck-detail.png)
 
 ## Tech stack
 
