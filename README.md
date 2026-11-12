@@ -50,9 +50,6 @@ The terminal operations board uses fictional demo data and a schematic staging l
 - **Honest milestones.** The project is planned in milestones with written acceptance criteria, and design decisions are recorded as architecture decision records (ADRs).
 - **Clean separation.** The core engine has no web framework or database code, so it can be tested on its own and reused anywhere.
 
-## My role
-
-I co-founded P.A.S.S. with Lamour Atkins and built the core engine, simulator, and backend prototype.
 
 ## What I learned
 
