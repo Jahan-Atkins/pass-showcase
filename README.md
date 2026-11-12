@@ -1,26 +1,25 @@
-# P.A.S.S. (Pier Access Sequence System) (Showcase)
+# P.A.S.S. (Pier Access Sequence System)
 
-An early-stage logistics product that aims to cut the time drayage truckers spend picking up containers at the Ports of Los Angeles and Long Beach.
+An early-stage logistics prototype that explores how to reduce the time drayage drivers spend picking up containers at marine terminals in Los Angeles and Long Beach.
 
-> This is a showcase repo. P.A.S.S. is in active development as a potential startup, so the source code, algorithms, results, and screenshots are private. A walkthrough is available on request.
+> This is a showcase repo. A walkthrough is available on request. Source code, detailed simulation results, and demo materials are private.
 
 **Contact:** jahan.atkins815@gmail.com | [linkedin.com/in/jahan-atkins-39002b419](https://linkedin.com/in/jahan-atkins-39002b419)
 
 ## The problem
 
-Drayage truckers are paid by the load, not by the hour, so every minute spent waiting inside a marine terminal is unpaid time. Terminals lose too, because inefficient pickups waste expensive crane work. Both sides pay for the same inefficiency.
+Long waits cut into the number of trips a drayage driver can make. Truck arrivals can bunch up at the gate, and inefficient pickup sequences can add crane work inside the terminal.
 
 ## The approach
 
-P.A.S.S. is a sequencing optimizer: it decides the order in which trucks are served so that the terminal's equipment works more efficiently and drivers get in and out faster. The goal is a single change that saves time for the trucker and money for the terminal at once.
+P.A.S.S. started with sequencing trucks to reduce crane work. The prototype also explores how the timing of truck arrivals affects the gate queue. The simulator tracks time waiting to enter, time inside the terminal, and total time separately. The work is at the simulation and prototype stage.
 
 ## What's built so far
 
 - **Core engine:** a framework-free Python model of terminal operations plus a set of sequencing strategies, from a first-come-first-served baseline up to more advanced approaches
 - **Simulator and benchmark harness:** a discrete-event simulator that tests each strategy across many randomized runs, including control scenarios where a real improvement should not appear
-- **API:** a FastAPI service for the backend
-- **Integrations layer:** adapters for connecting to outside terminal and port data sources
-- **Mobile app:** an Expo (React Native) driver app, in progress
+- **Backend:** a FastAPI scaffold and adapters for external data sources
+- **Mobile prototype:** an Expo (React Native) driver demo
 
 ## Tech stack
 
@@ -35,13 +34,13 @@ P.A.S.S. is a sequencing optimizer: it decides the order in which trucks are ser
 
 ## Engineering approach
 
-- **Prove it before you sell it.** Every sequencing strategy has to beat the baseline in the simulator before it ships, and one advanced strategy was built, benchmarked, and dropped because it didn't pay off.
+- **Benchmark against controls.** The simulator compares strategies with a first-come, first-served baseline and includes scenarios where a benefit should be small. It tracks both wait times and how those waits are distributed across drivers.
 - **Honest milestones.** The project is planned in milestones with written acceptance criteria, and design decisions are recorded as architecture decision records (ADRs).
 - **Clean separation.** The core engine has no web framework or database code, so it can be tested on its own and reused anywhere.
 
 ## My role
 
-Co-founder working with Lamour Atkins . I built the MVP software: the core engine, simulator, and backend.
+I co-founded P.A.S.S. with Lamour Atkins and built the core engine, simulator, and backend prototype.
 
 ## What I learned
 
